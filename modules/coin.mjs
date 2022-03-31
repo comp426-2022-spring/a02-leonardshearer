@@ -63,9 +63,19 @@ function coinFlips(flips) {
  */
 
 function countFlips(array) {
-  return {
-    tails: array.filter(e => e === "tails").length,
-    heads: array.filter(e => e === "heads").length
+  if (array.filter(e => e === "tails").length == 0) {
+    return {
+      heads: array.filter(e => e === "heads").length
+    }
+  } else if (array.filter(e => e === "heads").length == 0) {
+    return {
+      tails: array.filter(e => e === "tails").length
+    }
+  } else {
+    return {
+      tails: array.filter(e => e === "tails").length,
+      heads: array.filter(e => e === "heads").length
+    }
   }
 }
 
