@@ -4,7 +4,11 @@ import minimist from "minimist"
 const args = minimist(process.argv.slice(2))
 
 const number = args['number'] || 1
-const flips = coinFlipper.coinFlips(number)
+if (number > 1) {
+    const flips = coinFlipper.coinFlips(number)
 
-console.log(flips)
-console.log(coinFlipper.countFlips(flips))
+    console.log(flips)
+    console.log(coinFlipper.countFlips(flips))
+} else {
+    console.log(coinFlipper.coinFlip());
+}
