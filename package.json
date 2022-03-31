@@ -11,5 +11,16 @@
   },
   "author": "Leonard Shearer",
   "license": "GPL-3.0-or-later",
-  "type": "module"
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comp426-2022-spring/a02-leonardshearer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/comp426-2022-spring/a02-leonardshearer/issues"
+  },
+  "homepage": "https://github.com/comp426-2022-spring/a02-leonardshearer#readme",
+  "dependencies": {
+    "minimist": "^1.2.6"
+  }
 }
