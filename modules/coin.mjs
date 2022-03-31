@@ -82,7 +82,7 @@ function countFlips(array) {
 
 function flipACoin(call) {
   const flip = coinFlip()
-  const result = "lose"
+  var result = "lose"
   if (flip === call) {
     result = "win"
   }
